@@ -1,3 +1,39 @@
-body{
-    background-color: #00ffff;
+/**
+* Folha de estilo personalizada do site...
+* luizinz
+*/
+
+/* Smartphone Portrait */
+body {
+  background-color: #00ffff;
+}
+
+/* Smartphone landscape */
+@media (min-width: 576px) {
+  body {
+    background-color: #ffff00;
+  }
+}
+
+/* tablet portrait*/
+@media (min-width: 768px) {
+  body {
+    background-color: #ff0000;
+    color: rgb(29, 160, 156);
+  }
+}
+
+/* tablet Landscape */
+@media (min-width: 992px) {
+  body {
+    background-color: #00ff00;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  body {
+    background-color: #ffffff;
+    color: #000;
+  }
 }
