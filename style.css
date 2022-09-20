@@ -8,6 +8,12 @@ body {
   background-color: #00ffff;
 }
 
+/*  layout */
+.flexFooter{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 /* Rodapé */
 footer{
   background-color: #343538;
@@ -16,10 +22,25 @@ footer{
   text-align: center;
 }
 
+#social{
+  margin-bottom: 25px;
+}
+
 /* Smartphone landscape */
 @media (min-width: 576px) {
   body {
     background-color: #ffff00;
+  }
+
+  /* Rodapé */
+  .flexFooter{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
   }
 }
 
