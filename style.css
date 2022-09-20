@@ -8,6 +8,14 @@ body {
   background-color: #00ffff;
 }
 
+/* Rodapé */
+footer{
+  background-color: #343538;
+  color: #fff;
+  padding: 50px 0px;
+  text-align: center;
+}
+
 /* Smartphone landscape */
 @media (min-width: 576px) {
   body {
