@@ -5,16 +5,69 @@
 
 /* css reset */
 
-/* Smartphone Portrait */
+/* Smartphone Portrait 
 body {
   background-color: #00ffff;
 }
+*/
+
+/** Background video 
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+ End Background video */
 
 /*  layout */
 .flexFooter{
   display: flex;
   flex-direction: column-reverse;
 }
+
+  /*Banner*/
+  main{
+    background:url(img/background.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
 
 /* Rodapé */
 footer{
@@ -30,9 +83,11 @@ footer{
 
 /* Smartphone landscape */
 @media (min-width: 576px) {
-  body {
-    background-color: #ffff00;
+
+  main{
+    height: 50vh;
   }
+
 
   /* Rodapé */
   .flexFooter{
@@ -48,17 +103,16 @@ footer{
 
 /* tablet portrait*/
 @media (min-width: 768px) {
-  body {
-    background-color: #ff0000;
-    color: rgb(29, 160, 156);
-  }
+
 }
 
 /* tablet Landscape */
 @media (min-width: 992px) {
-  body {
-    background-color: #00ff00;
+
+  main{
+    height: 100vh;
   }
+
 }
 
 /* Desktop */

@@ -24,51 +24,68 @@
   <body>
     <!--Cabeçalho-->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <!---a class="navbar-brand" href="#">Nike</!---a>-->
+      <div class="container">
+        <!---a class="navbar-brand" href="#">Nike</!---a>-->
 
-          <a class="navbar-brand" href="index.html">
-            <img src="img/nike.png" alt="nike">
-          </a>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/nike.png" alt="nike" />
+        </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="produtos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Produtos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Camisetas</a></li>
-                  <li><a class="dropdown-item" href="#">Bermudas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Tenis</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <!--<form class="d-flex" role="search">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="produtos.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Tenis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <!--<form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>-->
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-    <main class="container-fluid">
-        <!--h1>Home<h1-->
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center">
+      <h1>Just Do It<h1>
+        <h2>Nike</h2>
 
-        <!--Banner estilo carrossel-->
+      <!--Banner estilo carrossel
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -108,25 +125,58 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!-- fim do carrosel de imagens-->
+        fim do carrosel de imagens-->
+
+
+      <!-- Background video >
+      <div class="video-background-holder">
+        <div class="video-background-overlay"></div>
+        <video
+          playsinline="playsinline"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+        >
+          <source
+            src="video/pexels-cottonbro-5310847.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="video-background-content container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-4">Bootstrap video background</h1>
+              <p class="lead mb-0">With HTML5 Video and Bootstrap</p>
+              <p class="lead">
+                Snippet by
+                <a href="https://bootstrapious.com/snippets" class="text-white">
+                  <u>Bootstrapious</u></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+       End Background video -->
 
     </main>
 
-    <footer class="container-fluid ">
+    <footer class="container-fluid">
       <div class="container flexFooter">
         <div>
           <p>&#169;2022 - Nike</p>
         </div>
-  
+
         <div id="social">
-          <a href="https://www.instagram.com/nike" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-          <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-          <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
-          <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-          <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+          <a href="https://www.instagram.com/nike" target="_blank"
+            ><img src="img/instagram.png" alt="instagram"
+          /></a>
+          <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="img/linkedin.png" alt="linkedin" /></a>
+          <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+          <a href="#"><img src="img/youtube.png" alt="youtube" /></a>
         </div>
       </div>
-
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
